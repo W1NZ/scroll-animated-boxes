@@ -10,21 +10,22 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: gray;
 }
 .content{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 30vw;
     aspect-ratio: 13/6;
-    margin: 1em;
-    border-radius: 1em;
+    margin: 1rem;
+    border-radius: 1rem;
     background-color: lightblue;
-    color:white;
+    color:black;
     font-size: 4vw;
     box-shadow: -7px 11px 15px -6px rgba(66, 68, 90, 1);
 }
 .title{
     font-size: 4vw;
-    margin-top: 1em;
+    margin-top: 1rem;
 }
