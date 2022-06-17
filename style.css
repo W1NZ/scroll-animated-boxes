@@ -5,6 +5,9 @@
     font-family: Helvetica, sans-serif;
     font-weight: 800;
 }
+body{
+    overflow-x: hidden;
+}
 main{
     display:flex;
     flex-direction: column;
@@ -12,7 +15,7 @@ main{
     align-items: center;
     background-color: gray;
 }
-.content{
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,8 +27,17 @@ main{
     color:black;
     font-size: 4vw;
     box-shadow: -7px 11px 15px -6px rgba(66, 68, 90, 1);
+    transform: translateX(400%);
+    transition: transform .4s ease;
 }
 .title{
     font-size: 4vw;
     margin-top: 1rem;
+}
+
+.content:nth-of-type(even){
+    transform: translateX(-400%);
+}
+.content.come{
+    transform: translateX(0);
 }
